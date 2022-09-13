@@ -1,0 +1,368 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #f2f2f2;
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  border: solid 1px red;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  background-image: url("../images/logo_place_header.svg");
+  width: 228px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  position: absolute;
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  height: 43px;
+}
+
+.header__title {
+  max-width: 730px;
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 96px;
+  margin-left: 64px;
+  z-index: 3;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  max-width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+  z-index: 2;
+  color: #2f80ed;
+}
+
+.header__main-illustarion {
+  background-image: url("../images/two_again.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  align-self: center;
+  width: 765px;
+  height: 604px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.header__square-pic {
+  background-color: #2f80ed;
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+div {
+  border: solid 1px red;
+}
+
+.content {}
+
+.description {}
+
+.flex-row {
+  display: flex;
+}
+
+.two-column__brief__flex-column {
+  flex-direction: column;
+  min-width: 784px;
+  width: 80%;
+}
+
+.two-column {
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.two-column__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+
+.description__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.description__paragraph:nth-of-type(3n) {
+  margin-bottom: 0px;
+}
+
+.paragraph_span-accent {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.flex-column2 {
+  flex-direction: column;
+  display: flex;
+}
+
+.feynman {
+  border: solid 1px red;
+  background-color: #f2f2f2;
+  height: 890px;
+  position: relative;
+}
+
+.feynman__title {
+  border: solid 1px red;
+  margin-top: 100px;
+  width: 648px;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  align-self: center;
+  z-index: 2;
+}
+
+.feynman__title_second {
+  border: solid 1px red;
+  z-index: 2;
+  margin-top: 70px;
+  align-self: center;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.feynman__link {
+  border: solid 1px red;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  font-size: 36px;
+  line-height: 51px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.feynman_img {
+  border: solid 1px red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.digits {}
+
+.flex-column2 {}
+
+.digits__title {
+  margin-top: 100px;
+  width: 60%;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  align-self: center;
+}
+
+.digits__title_second {
+  margin-top: 20px;
+  align-self: center;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.digits__table_flex-row {
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.digits__table {
+  width: 1100px;
+  align-self: center;
+  margin-bottom: 100px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+}
+
+.table__cell {
+  width: 250px;
+}
+
+.cell_heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.cell_text {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+
+.footer {
+  background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 350px;
+  flex-direction: row;
+}
+
+.footer__columns {
+  width: 90%;
+  margin: auto;
+  align-self: stretch;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.logo_place_footer {
+  height: 32px;
+}
+
+.logo::content {
+  background-image: url("../images/logo_place_footer.svg");
+}
+
+.copyright {
+  color: #f2f2f2;
+  font-size: 18px;
+  line-height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+}
+
+
+.column__content_copyright {
+  justify-content: flex-start;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.column__content_second {
+  justify-content: space-around;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.column__content_info {}
+
+.flex-column {}
+
+.footer__column_heading {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #f2f2f2;
+}
+
+.footer__column_column-links {}
+
+.column__content_social {
+  position: absolute;
+  right: 0;
+}
+
+.footer__column_column-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f2f2f2;
+  align-items: center;
+}
+
+.footer__column_column-link {
+  font-size: 18px;
+  line-height: 30px;
+  color: #f2f2f2;
+}
+
+.footer__column_column-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__column_column-icon_Face {
+  background-image: url("../images/facebook_color_white.svg");
+}
+
+.footer__column_column-icon_VK {
+  background-image: url("../images/vk_color_white.svg");
+}
+
+.footer__column_column-icon_insta {
+  background-image: url("../images/instagram_color_white.svg");
+}
