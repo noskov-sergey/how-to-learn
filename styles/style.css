@@ -19,7 +19,6 @@ body {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  border: solid 1px red;
   align-items: center;
   position: relative;
 }
@@ -96,10 +95,6 @@ body {
   margin-top: 80px;
 }
 
-div {
-  border: solid 1px red;
-}
-
 .content {}
 
 .description {}
@@ -150,14 +145,12 @@ div {
 }
 
 .feynman {
-  border: solid 1px red;
   background-color: #f2f2f2;
   height: 890px;
   position: relative;
 }
 
 .feynman__title {
-  border: solid 1px red;
   margin-top: 100px;
   width: 648px;
   font-size: 120px;
@@ -169,7 +162,6 @@ div {
 }
 
 .feynman__title_second {
-  border: solid 1px red;
   z-index: 2;
   margin-top: 70px;
   align-self: center;
@@ -178,7 +170,6 @@ div {
 }
 
 .feynman__link {
-  border: solid 1px red;
   position: absolute;
   top: 50%;
   right: 48px;
@@ -189,7 +180,6 @@ div {
 }
 
 .feynman_img {
-  border: solid 1px red;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -237,7 +227,11 @@ div {
   display: flex;
 }
 
-.table__cell {
+.table__cell_width_s {
+  width: 200px;
+}
+
+.table__cell_width_m {
   width: 250px;
 }
 
@@ -267,11 +261,7 @@ div {
 .footer__columns {
   width: 90%;
   margin: auto;
-  align-self: stretch;
-}
-
-.flex-row {
-  display: flex;
+  min-height: 250px;
 }
 
 .logo_place_footer {
@@ -365,4 +355,10 @@ div {
 
 .footer__column_column-icon_insta {
   background-image: url("../images/instagram_color_white.svg");
+}
+
+
+
+div {
+  border: solid 1px red;
 }
