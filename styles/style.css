@@ -1,11 +1,7 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -71,7 +67,7 @@ body {
   background-position: right;
   align-self: center;
   width: 765px;
-  height: 604px;
+  height: 608px;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -193,6 +189,8 @@ body {
 
 .digits__title {
   width: 60%;
+  text-align: center;
+  align-self: center;
 }
 
 .digits__title_first {
@@ -200,14 +198,10 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.15;
-  text-align: center;
-  align-self: center;
 }
 
 .digits__title_second {
   margin-top: 20px;
-  text-align: center;
-  align-self: center;
   font-size: 24px;
   line-height: 34px;
 }
@@ -300,8 +294,6 @@ body {
 
 .column__content_info {}
 
-.flex-column {}
-
 .footer__column_heading {
   margin-bottom: 20px;
   font-size: 18px;
@@ -361,8 +353,24 @@ body {
   background-image: url("../images/instagram_color_white.svg");
 }
 
+.kaufman {
+  position: relative;
+  overflow: hidden;
+}
 
+.section__theme_dark {
+  background-color: #1f1f1f;
+}
 
-div {
-  border: solid 1px red;
+.section__text_theme_dark {
+  color: #f2f2f2;
+  z-index: 1;
+}
+
+.kaufman_triangle {
+  position: absolute;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
 }
